@@ -1,3 +1,5 @@
+
+import 'package:final_640710496/models/todo_item.dart';
 import 'package:flutter/material.dart';
 
 class MyListTile extends StatelessWidget {
@@ -13,7 +15,7 @@ class MyListTile extends StatelessWidget {
     required this.subtitle,
     required this.imageUrl,
     this.selected = false,
-    this.onTap,
+    this.onTap, required TodoItem todoItem,
   });
 
   @override
